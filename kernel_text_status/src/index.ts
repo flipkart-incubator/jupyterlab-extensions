@@ -27,7 +27,7 @@ const TOOLBAR_KERNEL_NAME_CLASS = 'jp-Toolbar-kernelName';
  */
  const plugin: JupyterLabPlugin<void> = {
  	activate,
- 	id: 'my-extension-name:buttonPlugin',
+ 	id: 'fk_extension:kernelTextPlugin',
  	autoStart: true
  };
 
