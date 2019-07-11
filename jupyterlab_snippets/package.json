@@ -1,0 +1,45 @@
+{
+  "name": "@flipkart/jupyterlab_snippets",
+  "version": "0.1.6",
+  "description": "Plugin for inserting code snippets into the current notebook.",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "adeel.zafar",
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flipkart-incubator/jupyterlab-extensions.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "prepare": "npm run clean && npm run build",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^0.17.2",
+    "@jupyterlab/apputils": "^0.17.2",
+    "@jupyterlab/cells": "^0.17.2",
+    "@jupyterlab/fileeditor": "^0.17.2",
+    "@jupyterlab/mainmenu": "^0.6.2",
+    "@jupyterlab/notebook": "^0.17.2",
+    "@phosphor/commands": "^1.5.0",
+    "@phosphor/widgets": "^1.6.0"
+  },
+  "devDependencies": {
+    "rimraf": "~2.6.2",
+    "typescript": "~2.9.2"
+  },
+  "jupyterlab": {
+    "extension": true
+  }
+}

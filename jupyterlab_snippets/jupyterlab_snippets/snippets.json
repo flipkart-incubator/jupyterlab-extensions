@@ -1,0 +1,59 @@
+[
+    {
+      "submenu": "python",
+      "name": "read-file-into-string",
+      "label": "Read file into a string",
+      "text": [
+        "with open('some/file.txt', 'r') as file_handle:",
+        "    file_contents = file_handle.read()"
+      ]
+    },
+    {
+      "submenu": "numpy",
+      "name": "setup",
+      "label": "Initialize numpy",
+      "text": [
+        "import numpy as np"
+      ]
+    },
+    {
+      "submenu": "numpy",
+      "name": "new-array-of-shape",
+      "label": "New array of a given shape",
+      "text": [
+        "new_array = np.zeros((4,3,), dtype=complex)"
+      ]
+    },
+    {
+      "submenu": "numpy",
+      "name": "new-array-same-shape-another",
+      "label": "New array with same shape as another",
+      "text": [
+        "new_array = np.zeros_like(old_array, dtype=complex"
+      ]
+    },
+    {
+      "submenu": "numpy",
+      "name": "copy-array",
+      "label": "Copy of existing array",
+      "text": [
+        "new_array = np.copy(old_array)"
+      ]
+    },
+    {
+      "submenu": "numpy",
+      "name": "array-from-list-data",
+      "label": "Array from list of data",
+      "text": [
+        "new_array = np.array([1.2, 3.4, 5.6])"
+      ]
+    },
+    {
+      "submenu": "numpy",
+      "name": "evenly-spaced-values",
+      "label": "Evenly spaced values within a given interval",
+      "text": [
+        "new_array = np.arange(1, 10, 2)"
+      ]
+    }
+]
